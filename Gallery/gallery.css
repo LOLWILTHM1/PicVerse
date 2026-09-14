@@ -1,0 +1,533 @@
+@font-face{
+    font-family: 'lexend';
+    src: url(../Lexend/Lexend-VariableFont_wght.ttf) format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+
+:root {
+    --navbar-color: #D49595;
+    --text-color: #F7E2E2;
+    --background-color: #995959;
+    --linear-color1: #DBA6A6;
+    --linear-color2: #EC7272;
+    --line-color: #DBA6A6;
+    --username-color: #CC5F5F;
+    --primary-text: 'lexend';
+}
+
+body{
+    background-color: var(--background-color);
+    margin: 0px;
+}
+
+a{
+    color: var(--text-color);
+    font-family: var(--primary-text);
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    background-color: var(--navbar-color);
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    border: 0px;
+    margin: 0px;
+    padding-left: 24px;
+    z-index: 2;
+}
+
+#logo {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    transition: all 0.2s ease-in-out;
+}
+
+#logo:hover{
+    filter: brightness(95%);
+    transform: scale(1.1);
+}
+
+.navbar-left {
+    display: flex;
+    position: fixed; 
+    width: 35%;
+    height: auto;
+    align-items: center;
+    border: 0px;
+    margin: 0px;
+    margin-left: 2%;
+}
+
+.navbar-right {
+    display: flex;
+    position: fixed;
+    width: 35%;
+    height: auto;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 57%;
+    padding: 0 20px;
+}
+
+.navbar-left a {
+    color: var(--text-color);
+    font-size: 15px;
+    margin-left: 60px;
+    padding: 3px 6px;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar-right a{
+    color: var(--text-color);
+    font-size: 15px;
+    margin-left: 60px;
+    padding: 3px 6px;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar-left a:hover{
+    filter: brightness(85%);
+    transform: scale(1.1);
+}
+
+.navbar-right a:hover {
+    filter: brightness(95%);
+    transform: scale(1.1);
+}
+
+.image-Anime, .image-chillvibes, .image-peach {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    background-color: var(--background-color); 
+}
+
+.image-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.image-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.image-item2 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-item2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.image-item1 {
+    width: 364px;
+    height: 251px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    background-image: url("../Assets/pbaic624o2121.png");
+}
+
+.image-item2 {
+    width: 364px;
+    height: 251px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    background-image: url("../Assets/1012229.png");
+}
+
+.image-item3 {
+    width: 364px;
+    height: 251px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    background-image: url("../Assets/1371442.png");
+}
+
+.image-item-large1 {
+    width: 364px;
+    height: 251px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    background-image: url("../Assets/1001575.png");
+}
+
+.image-item-large2 {
+    width: 364px;
+    height: 251px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    background-image: url("../Assets/358929.jpg");
+}
+
+
+.image-item1::after{
+    content: "Eugene Bright – ‘ramen shop’";
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-family: var(--primary-text);
+    font-size: 16px;
+    color: var(--text-color);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.image-item2::after{
+    content: "BlueTechWizard – ‘Enchanted Fantasy Castle’";
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-family: var(--primary-text);
+    font-size: 16px;
+    color: var(--text-color);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.image-item3::after{
+    content: "patrika – ‘Serene Japanese’";
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-family: var(--primary-text);
+    font-size: 16px;
+    color: var(--text-color);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.image-item-large1::after{
+    content: "LOL – ‘Landscape in evening’";
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-family: var(--primary-text);
+    font-size: 16px;
+    color: var(--text-color);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.image-item-large2::after{
+    content: "HAi – ‘Goose’";
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-family: var(--primary-text);
+    font-size: 16px;
+    color: var(--text-color);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.image-item1,
+.image-item2,
+.image-item3,
+.image-item-large1,
+.image-item-large2 {
+    opacity: 0;
+    animation: fadeInScale 0.8s ease-out forwards;
+}
+
+.image-item1:hover,
+.image-item2:hover,
+.image-item3:hover,
+.image-item-large1:hover,
+.image-item-large2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.image-Anime span{
+    height: 10%;
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 42%;
+    font-family: var(--primary-text);
+    font-size: 40px;
+    color: var(--text-color);
+}
+
+.image-chillvibes span{
+    height: 10%;
+    width: 80%;
+    margin-top: 7%;
+    margin-left: 40%;
+    font-family: var(--primary-text);
+    font-size: 40px;
+    color: var(--text-color);
+}
+
+.image-peach span{
+    height: 10%;
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 43%;
+    font-family: var(--primary-text);
+    font-size: 40px;
+    color: var(--text-color);
+}
+
+.image-Anime span,
+.image-chillvibes span,
+.image-peach span {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInScale 1s ease-out forwards;
+    animation-delay: 0.1s;
+}
+
+.popup-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    animation: fadeIn 0.3s ease;
+}
+
+.popup-content {
+    background-color: var(--navbar-color);
+    padding: 20px;
+    width: 600px;
+    border-radius: 12px;
+    animation: fadeInScale 0.3s ease;
+    box-sizing: border-box;
+    max-width: 90vw;
+}
+
+.popup-icon{
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-icon img {
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.popup-icon span{
+    margin-left: 10%;
+    color: var(--text-color);
+}
+
+.popup-header {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.popup-content img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.popup-title {
+    font-size: 14px;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.popup-comments {
+    background-color: var(--navbar-color);
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--text-color);
+    font-family: sans-serif;
+}
+
+.popup-comments .comment {
+    margin-bottom: 8px;
+}
+
+.popup-comments #com{
+    color: var(--text-color);
+}
+
+.popup-comments #com::placeholder {
+    color: var(--text-color);
+    opacity: 1;
+}
+
+.popup-comments input {
+    width: 100%;
+    padding: 6px;
+    border-radius: 6px;
+    border: none;
+    margin-top: 8px;
+    background-color: var(--background-color);
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    background-color: var(--navbar-color);
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.footer span{
+    margin-top: 50px;
+    font-family: var(--primary-text);
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+.footer #logo{
+    width: 120px;
+    height: 120px;
+}
+
+.footer-center {
+    display: flex;
+    margin-left: 180px;
+    justify-content: center;
+    flex: 1;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-width: 60px;
+}
+
+.footer-right img{
+    width: 77px;
+    height: 77px;
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    align-items: flex-start;
+  }
+
+  .navbar-left,
+  .navbar-right {
+    position: static;
+    width: 100%;
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  .navbar-left a,
+  .navbar-right a {
+    font-size: 13px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .image-Anime, .image-chillvibes, .image-peach {
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .image-item,
+  .image-item1,
+  .image-item2,
+  .image-item3,
+  .image-item-large1,
+  .image-item-large2 {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  .image-Anime span,
+  .image-chillvibes span,
+  .image-peach span {
+    margin: 20px auto;
+    text-align: center;
+    font-size: 28px;
+    display: block;
+    width: 100%;
+  }
+
+  .popup-content {
+    width: 90%;
+    padding: 16px;
+  }
+
+  .popup-header {
+    font-size: 20px;
+  }
+
+  .popup-comments input {
+    font-size: 14px;
+  }
+
+  .footer {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer-center {
+    margin-left: 0;
+    justify-content: center;
+    margin: 20px 0;
+  }
+
+  .footer-right {
+    justify-content: center;
+  }
+
+  .footer #logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .footer span {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .footer-right img {
+    width: 60px;
+    height: 60px;
+  }
+}

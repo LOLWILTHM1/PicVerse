@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Page</title>
+    <link rel="shortcut icon" href="../Assets/pinterest.png" type="image/png">
+    <link rel="stylesheet" href="submission.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+            <img src="../Assets/pinterest.png" alt="logo" id="logo">
+            <a href="../Home/index.html">Home</a>
+            <a href="../Gallery/gallery.html">Gallery</a>
+            <a href="../Community/community.html">Community</a>
+        </div>
+        <div class="navbar-right">
+            <a href="../Submission/submission.html">Submission</a>
+            <a href="../About/about.html">About us</a>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="testing">
+            <span>Create</span>
+        </div>
+        <div class="left-panel">
+            <div class="upload-box" id="uploadBox">
+                <input type="file" id="fileInput" hidden>
+                <div class="upload-icon"><img src="../Assets/download-circle-solid.png" alt=""></div>
+                <p>Choose a file or drag<br>and drop it here</p>
+                <p class="note">We recommend using high quality .jpg files<br>
+                less than 20 MB or .mp4 files less than 200 MB.</p>
+            </div>
+
+        </div>
+
+        <div class="right-panel">
+            <div class="form-group">
+                <label>Title</label>
+                <input type="text" id="titleInput" placeholder="Add a title">
+            </div>
+            <div class="form-group">
+                <label>Description</label>
+                <textarea id="descriptionInput" placeholder="Add a detailed description"></textarea>
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" id="emailInput" placeholder="Add a email">
+            </div>
+            <div class="form-group">
+                <label>Tags</label>
+                <input type="text" id="tagsInput" placeholder="Search for tags">
+            </div>
+            <div class="form-group checkbox">
+                <input type="checkbox" id="ai-gen">
+                <label for="ai-gen">AI Generated</label>
+            </div>
+            <div class="form-group">
+                <button id="submitBtn">Submit</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="footer-center">
+            <img src="../Assets/pinterest.png" alt="logo" id="logo">
+            <span id="copyright">© 2025 Picverse. All rights reserved.</span>
+        </div>
+        <div class="footer-right">
+            <img src="../Assets/instagram-alt.png" alt="inst">
+            <img src="../Assets/x.png" alt="x">
+            <img src="../Assets/discord.png" alt="discord">
+        </div>
+    </div>
+    <script src="submission.js"></script>
+</body>
+</html>
